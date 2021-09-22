@@ -1,14 +1,16 @@
-#MenuDeNav{
+.menu-de-nav{
     float: right;
     margin-right: 100px;
     text-indent: 50px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
-#Sinscrire,#Hébergement{
+.sinscrire,.hebergement{
     color: blue;
 }
 
-#HébergementMarseille{
+.hebergement-marseille{
     border: 0px; 
     border-radius: 20px;
     background-color: rgba(201, 201, 201, 0.863);
@@ -17,7 +19,7 @@
     flex-direction: row;
     
 }
-#lesPlusPopulaires{
+.les-plus-populaires{
     border: 0px; 
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.863);
@@ -46,29 +48,26 @@ article{
     border: solid 4px orange;
     margin: 5px;
 }
-#MenuDeNav{
-    display: flex;
-    align-items: center;
-}
+
 img{
     border-radius: 10px;
     
 }
-#AubergeCannebièreJPG{
+.auberge-cannebiereJPG{
     width: 30%;
     height: 30%;
     object-fit: cover; 
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-#hotelDuPortJPG{
+.hotel-du-portJPG{
     width: 50%;
     height: 50%;
     object-fit: cover; 
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-#AubergeCannebière{
+.auberge-cannebière{
     padding: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
