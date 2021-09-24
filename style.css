@@ -19,6 +19,26 @@
     display: flex;
     align-items: center;
 }
+
+.hebergement{
+    padding-top: 50px;
+}
+.hebergement:hover {
+    border-top: solid 3px blue;
+}
+.sinscrire{
+    padding-top: 50px;
+}
+.sinscrire:hover {
+    border-top: solid 3px blue;
+}
+.activites{
+    padding-top: 50px;
+}
+.activites:hover {
+    border-top: solid 3px blue;
+}
+
 a:link 
 { 
  text-decoration:none; 
@@ -58,7 +78,6 @@ header{
     margin: 5px;
 }
 nav{
-    border: solid 4px green;
     margin: 5px;
 }
 article{
