@@ -1,3 +1,16 @@
+/* Variable pour le responsive */
+
+:root {
+    --break-header: 1400px;
+    --break-large: 1220px;
+    --break-medium: 1024px;
+    --break-tablet: 768px;
+    --break-small: 420px;
+    --break-mobile: 375px;
+}
+
+/* code Desktop */
+
 .menu-de-nav{
     float: right;
     margin-right: 100px;
@@ -81,3 +94,6 @@ img{
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* code Tablette et Mobile */
+
