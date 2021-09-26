@@ -19,7 +19,12 @@
     display: flex;
     align-items: center;
 }
-
+.nom-du-site{
+    max-width: 100px;
+    max-height: 100px;
+    display:block;
+    margin-right: auto;
+}
 .hebergement{
     padding-top: 50px;
 }
@@ -114,5 +119,41 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* code Tablette et Mobile */
+/* code Responsive */
+
+@media screen and (max-width: 1400px) {
+    nav {
+        background-color: crimson;
+    }
+}
+@media screen and (max-width: 1220px) {
+    nav {
+        background-color: chartreuse;
+    }
+}
+@media screen and (max-width: 1024px) {
+    nav {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   nav {
+       background-color: aqua;
+   }
+}
+@media screen and (max-width: 420px) {
+    nav {
+        background-color:darkgrey;
+    }
+ }
+
+@media screen and (max-width: 375px){
+   nav {
+       background-color: black;
+   } 
+   .sinscrire{
+       flex-direction: column;
+   }
+}
 
