@@ -10,7 +10,9 @@
 }
 
 /* code Desktop */
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .menu-de-nav{
     float: right;
     margin-right: 100px;
@@ -18,12 +20,13 @@
     margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .nom-du-site{
     max-width: 100px;
     max-height: 100px;
     display:block;
-    margin-right: auto;
+    margin: 0;
 }
 .hebergement{
     padding-top: 50px;
@@ -33,6 +36,7 @@
 }
 .sinscrire{
     padding-top: 50px;
+    display: flex;
 }
 .sinscrire:hover {
     border-top: solid 3px blue;
@@ -91,34 +95,116 @@ article{
 }
 
 img{
-    border-radius: 10px;
-    
-}
-.auberge-cannebiereJPG{
-    width: 30%;
-    height: 30%;
-    object-fit: cover; 
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-.hotel-du-portJPG{
-    width: 50%;
-    height: 50%;
-    object-fit: cover; 
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius: 10px;   
 }
 .auberge-cannebière{
     padding: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
+    width: 400px;
+    height: 400px;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
+.auberge-cannebiereJPG{
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
-
+.hotel-du-port{
+    padding: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.hotel-du-portJPG{
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.hotel-des-mouettes{
+    padding: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.hotel-des-mouettesJPG{
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.hotel-de-la-mer{
+    padding: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.hotel-de-la-merJPG{
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.auberge-le-panier{
+    padding: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.auberge-le-panierJPG{
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.hotel-chez-amina{
+    padding: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.hotel-chez-aminaJPG{
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
 /* code Responsive */
 
 @media screen and (max-width: 1400px) {
