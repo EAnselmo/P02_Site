@@ -8,7 +8,9 @@
     --break-small: 420px;
     --break-mobile: 375px;
 }
-
+@media screen and (max-witdh: var(--break-header)){
+    
+}
 /* code Desktop */
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -97,7 +99,7 @@ h4{
     margin-left: 15px;
     padding: 10px;
 }
-.auberge-cannebière{
+.auberge-cannebiere{
     padding: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -286,7 +288,6 @@ h4{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-
 
 /* code Responsive */
 
