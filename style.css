@@ -8,10 +8,16 @@
     --break-small: 420px;
     --break-mobile: 375px;
 }
+/* Façon d'utiliser la variable
+
 @media screen and (max-witdh: var(--break-header)){
     
-}
+}*/
 /* code Desktop */
+
+header,section,article,footer{
+    visibility: hidden;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,20 +40,22 @@ body{
     padding-top: 50px;
 }
 .hebergement:hover {
-    border-top: solid 3px blue;
+    border-top: solid 3px rgba(57, 136, 251);
 }
 .sinscrire{
-    padding-top: 50px;
+    padding-top: 48px;
     display: flex;
+    flex-wrap: wrap;
+
 }
 .sinscrire:hover {
-    border-top: solid 3px blue;
+    border-top: solid 3px rgba(57, 136, 251);
 }
 .activites{
     padding-top: 50px;
 }
 .activites:hover {
-    border-top: solid 3px blue;
+    border-top: solid 3px rgba(57, 136, 251);
 }
 
 a:link 
@@ -55,7 +63,9 @@ a:link
  text-decoration:none; 
 } 
 .sinscrire,.hebergement{
-    color: blue;
+    color: rgba(57, 136, 251);
+    padding-top: 50px;
+    display: flex;
 }
 
 .hebergement-marseille{
@@ -85,7 +95,11 @@ header{
     margin: 5px;
 }
 nav{
-    margin: 5px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 article{
     border: solid 4px orange;
@@ -293,37 +307,63 @@ h4{
 
 @media screen and (max-width: 1400px) {
     nav {
-        background-color: crimson;
+        
     }
 }
 @media screen and (max-width: 1220px) {
     nav {
-        background-color: chartreuse;
+        
     }
 }
 @media screen and (max-width: 1024px) {
     nav {
-        background-color: blue;
+       
     }
 }
 
 @media screen and (max-width: 768px) {
-   nav {
-       background-color: aqua;
+    body{
+        max-width: 578px;
+    }
+    nav {
+       align-items: center;
    }
+   .sinscrire{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border: hidden;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-left: 0px;
+    size: 50%;
+}
+    .hebergement,.activites{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        padding-left: 0px;
+        
+        
+    }
+    .nom-du-site{
+       
+    }
 }
 @media screen and (max-width: 420px) {
     nav {
-        background-color:darkgrey;
+        
     }
  }
 
 @media screen and (max-width: 375px){
    nav {
-       background-color: black;
+       
    } 
    .sinscrire{
-       flex-direction: column;
+       position: absolute;
    }
 }
 
