@@ -670,7 +670,9 @@ li.activites{
        position: absolute;
     }
    /*  HEADER  */
-
+    h3{
+        margin-right: 75%;
+    }
 
 }
 @media screen and (max-width: 420px) {
