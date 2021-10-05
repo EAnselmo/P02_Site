@@ -14,7 +14,11 @@
     
 }*/
 /* code Desktop */
-
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
 section, article, footer{
     display: none !important; 
 
@@ -25,11 +29,12 @@ body{
 }
 .menu-de-nav{
     margin-right: 120px;
-    text-indent: 50px;
+    gap: 40px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
 }
 a{
     color: rgba(57, 136, 251);
@@ -47,14 +52,15 @@ a{
     border-top: solid 3px rgba(57, 136, 251);
 }
 .sinscrire{
-    padding-top: 48px;
+    padding-top: 30px;
     display: flex;
     
 
 }
 
 .activites{
-    padding-top: 50px;
+    padding-top: 30px;
+    color: rgba(57, 136, 251);
 }
 .activites:hover {
     border-top: solid 3px rgba(57, 136, 251);
@@ -64,9 +70,9 @@ a:link
 { 
  text-decoration:none; 
 } 
-.sinscrire,.hebergement{
+.hebergement{
     color: rgba(57, 136, 251);
-    padding-top: 50px;
+    padding-top: 30px;
     display: flex;
 }
 #hebergement{
@@ -95,105 +101,159 @@ ul{
 }
 
 header{
-    width: 100%;
     margin: 10px;
     
 }
 .dessous-titre{
     margin: 0;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 #icon-localisation{
-    border: black 1px solid;
-    border-radius: 45px;
-    height: 25px;
-    width: 25px;
+
+    min-height: 40px;
+    min-width: 40px;
+    color: rgba(57, 136, 251);
+    background-color: rgb(224, 222, 222);
+    border: 0px solid ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .recherche-button{
-    display: inline-block;
+
     display: flex;
-    border: 1px solid rgb(219, 219, 219) ;
-    border-radius: 20px;
+    border: 0px solid rgb(219, 219, 219) ;
+    border-radius: 10px;
     width: 280px;
     height: 40px;
     margin-bottom: 30px;
+    margin-left: 10px;
+    justify-content: space-between;
     
 }
 button{
     color: white;
     background-color: rgba(57, 136, 251);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius:20px;
-    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    border: none;
+    font-weight: bold;
 }
 input{
     border: rgb(219, 219, 219) 1px solid;
+    font-weight: bold;
+    display: flex;
+    text-indent: 5px;
 }
 .filtres{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
 }
 .economique{
     width: 150px;
-    height: 50px;
+    height: 40px;
     display: flex;
     border: 1px rgb(219, 219, 219) solid;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
 
 }
 .economique-text{
     text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
 }
 .familial{
     width: 150px;
-    height: 50px;
+    height: 40px;
     display: flex;
     border: 1px rgb(219, 219, 219) solid;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
 }
 .familial-text{
     text-align: center;
+    font-weight: bold;
+    margin-right: 30px;
 }
 .romantique{
     width: 150px;
-    height: 50px;
+    height: 40px;
     display: flex;
     border: 1px rgb(219, 219, 219) solid;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
 }
 .romantique-text{
     text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
 }
 .animaux{
-    width: 150px;
-    height: 50px;
+    min-width: 200px;
+    height: 40px;
     display: flex;
     border: 1px rgb(219, 219, 219) solid;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
 }
 .animaux-text{
     text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
 }
 #icon-money-bill-wave,#icon-child,#icon-heart,#icon-dog {
     
-    margin-left: auto;
-    margin-right: auto;
-    border: black 1px solid;
+    margin-left: 0;
+    margin-right: 0;
+    border: rgb(219, 219, 219) 1px solid;
+    background-color: rgb(214, 231, 255);
     border-radius: 45px;
     height: 40px;
     width: 40px;
     display: flex;
     color: rgba(57, 136, 251);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 #icon-info{
     color: rgba(57, 136, 251) ;
+    min-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(219, 219, 219);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
 }
 .info{
     display: flex;
-    flex-direction: row;
-    display: inline;
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 .text-info{
     display: flex;
@@ -557,19 +617,22 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    /* NAV */
     body{
         width: 100vw;
     }
     .menu-de-nav{
        width: 100%;
        padding: 0;
+       margin: 0;
+       gap: 0;
     }
     nav {
-       align-items: center;
        display: flex;
+       align-items: center;
+       text-align: center;
        flex-direction: column;
-       display: inline-block;
-       width: 100%;
+       
    }
    .sinscrire{
     position: absolute;
@@ -606,7 +669,9 @@ li.activites{
        top: 20px;
        position: absolute;
     }
-   
+   /*  HEADER  */
+
+
 }
 @media screen and (max-width: 420px) {
     nav {
