@@ -15,29 +15,30 @@
 }*/
 /* code Desktop */
 
-header,section,article,footer{
-    visibility: hidden;
-}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 .menu-de-nav{
-    float: right;
-    margin-right: 100px;
+    margin-right: 120px;
     text-indent: 50px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+a{
+    color: rgba(57, 136, 251);
+}
 .nom-du-site{
     max-width: 100px;
     max-height: 100px;
     display:block;
-    margin: 0;
+    margin-left: 20px;
 }
 .hebergement{
-    padding-top: 50px;
+    padding-top: 0px;
 }
 .hebergement:hover {
     border-top: solid 3px rgba(57, 136, 251);
@@ -45,12 +46,10 @@ body{
 .sinscrire{
     padding-top: 48px;
     display: flex;
-    flex-wrap: wrap;
+    
 
 }
-.sinscrire:hover {
-    border-top: solid 3px rgba(57, 136, 251);
-}
+
 .activites{
     padding-top: 50px;
 }
@@ -67,7 +66,10 @@ a:link
     padding-top: 50px;
     display: flex;
 }
-
+#hebergement{
+    width: 65%;
+    margin: 0;
+}
 .hebergement-marseille{
     border: 0px; 
     border-radius: 20px;
@@ -75,24 +77,122 @@ a:link
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
+    width: 65%;
+    margin: 0;
 }
-
+.etoiles{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.premiere-page{
+    width: 100%;
+}
 ul{
     list-style: none;
 }
-footer{
-    border: solid 4px red;
-    margin: 5px;
-    background-color: rgba(128, 128, 128, 0.726) ;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+header{
+    width: 100%;
+    margin: 10px;
     
 }
-header{
-    border: solid 4px blue;
-    margin: 5px;
+.dessous-titre{
+    margin: 0;
+    margin-bottom: 20px;
+}
+#icon-localisation{
+    border: black 1px solid;
+    border-radius: 45px;
+    height: 25px;
+    width: 25px;
+}
+.recherche-button{
+    display: inline-block;
+    display: flex;
+    border: 1px solid rgb(219, 219, 219) ;
+    border-radius: 20px;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 30px;
+    
+}
+button{
+    color: white;
+    background-color: rgba(57, 136, 251);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    
+}
+input{
+    border: rgb(219, 219, 219) 1px solid;
+}
+.filtres{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.economique{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    border: 1px rgb(219, 219, 219) solid;
+    border-radius: 25px;
+
+}
+.economique-text{
+    text-align: center;
+}
+.familial{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    border: 1px rgb(219, 219, 219) solid;
+    border-radius: 25px;
+}
+.familial-text{
+    text-align: center;
+}
+.romantique{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    border: 1px rgb(219, 219, 219) solid;
+    border-radius: 25px;
+}
+.romantique-text{
+    text-align: center;
+}
+.animaux{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    border: 1px rgb(219, 219, 219) solid;
+    border-radius: 25px;
+}
+.animaux-text{
+    text-align: center;
+}
+#icon-money-bill-wave,#icon-child,#icon-heart,#icon-dog {
+    
+    margin-left: auto;
+    margin-right: auto;
+    border: black 1px solid;
+    border-radius: 45px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    color: rgba(57, 136, 251);
+}
+#icon-info{
+    color: rgba(57, 136, 251) ;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    display: inline;
+}
+.text-info{
+    display: flex;
 }
 nav{
     margin: 0px;
@@ -101,15 +201,9 @@ nav{
     align-items: center;
     
 }
-article{
-    border: solid 4px orange;
-    margin: 5px;
-}
 
-img{
-    border-radius: 10px;   
-}
 h4{
+    margin: 0;
     margin-left: 15px;
     padding: 10px;
 }
@@ -121,9 +215,15 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
-    
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.star-grey{
+    color: rgb(196, 196, 196);
+}
+.color-blue{
+    color: rgba(57, 136, 251) ;
 }
 .auberge-cannebiereJPG{
     width: 100%;
@@ -141,8 +241,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 .hotel-du-portJPG{
@@ -160,8 +260,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 .hotel-des-mouettesJPG{
@@ -179,8 +279,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 .hotel-de-la-merJPG{
@@ -198,8 +298,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 .auberge-le-panierJPG{
@@ -220,8 +320,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 .hotel-chez-aminaJPG{
@@ -231,7 +331,7 @@ h4{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-.prix-nuit-hotel-chez-amina,.prix-nuit-auberge-le-panier,.prix-nuit-hotel-de-la-mer,.prix-nuit-hotel-des-mouettes,
+.prix-nuit-auberge-cannebiere,.prix-nuit-hotel-chez-amina,.prix-nuit-auberge-le-panier,.prix-nuit-hotel-de-la-mer,.prix-nuit-hotel-des-mouettes,
 .prix-nuit-hotel-du-port,.prix-hotel-cannebiere,.prix-hotel-le-soleil-du-matin,.prix-au-coeur-de-leau-chambre-dhotes,.prix-hotel-tout-bleu-et-blanc{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -302,6 +402,137 @@ h4{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
+/* Activités à Marseille */
+h2{
+    margin-left: 10px;
+}
+.activites-a-marseille{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    gap: 10px;
+    margin-left: 10px ;
+}
+.vieux-port{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 350px;
+    height: 650px;
+}
+.vieux-portJPG{
+    display: block;
+    width: 350px;
+    height: 650px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.fort-de-pomegues{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 300px;
+    height: 250px;
+}
+.fort-de-pomeguesJPG{
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px; 
+}
+.iles-du-frioul{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 300px;
+    height: 250px;
+}
+.iles-du-frioulJPG{
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.parc-national-des-calanques{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 450px;
+    height: 650px;
+}
+.parc-national-des-calanquesJPG{
+    width: 350px;
+    height: 650px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.notre-dame-de-la-garde{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 400px;
+    height: 250px;
+}
+.notre-dame-de-la-gardeJPG{
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.parc-longchamp{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 400px;
+    height: 250px;
+}
+.parc-longchampJPG{
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+
+/* Footer */
+
+footer{
+    margin: 5px;
+    background-color: rgba(197, 194, 194, 0.726) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+}
+.menu-de-fin{
+    text-align: start;
+    
+}
+.a-propos{
+    margin: 0;
+    padding-left: 0;
+}
+.nos-hebergements{
+    margin: 0;
+    padding-left: 0;
+}
+.assistance{
+    margin: 0;
+    padding-left: 0;
+}
+
+
 
 /* code Responsive */
 
@@ -323,34 +554,55 @@ h4{
 
 @media screen and (max-width: 768px) {
     body{
-        max-width: 578px;
+        width: 100vw;
+    }
+    .menu-de-nav{
+       width: 100%;
+       padding: 0;
     }
     nav {
        align-items: center;
+       display: flex;
+       flex-direction: column;
+       display: inline-block;
+       width: 100%;
    }
    .sinscrire{
     position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
     justify-content: flex-end;
-    border: hidden;
     padding-top: 16px;
     padding-right: 20px;
     padding-left: 0px;
-    size: 50%;
+    top: 20px;
+    right: 50px;
+}
+li.activites{
+    text-align: center;
 }
     .hebergement,.activites{
         display: flex;
         align-items: center;
-        flex-direction: row;
         text-align: center;
         padding-left: 0px;
-        
-        
+        display: inline-block;
+        width: 50%;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgb(236, 234, 234);
+    }
+    .hebergement:hover,.activites:hover{
+        border-bottom: 4px solid rgba(57, 136, 251);
+        border-top: 0;
+        color: rgba(57, 136, 251);
+        font-size: 20px;
     }
     .nom-du-site{
-       
+       display: flex;
+       left: 0px;
+       top: 20px;
+       position: absolute;
     }
+   
 }
 @media screen and (max-width: 420px) {
     nav {
