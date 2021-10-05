@@ -15,7 +15,10 @@
 }*/
 /* code Desktop */
 
+section, article, footer{
+    display: none !important; 
 
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -129,6 +132,7 @@ input{
 .filtres{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .economique{
