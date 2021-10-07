@@ -19,13 +19,32 @@
 *:before{
     box-sizing: border-box;
 }
-section, article, footer{
+article, footer{
     display: none !important; 
-
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+}
+img{
+    object-fit: cover;
+}
+ul{
+    list-style: none;
+}
+/* NAV */
+
+nav{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nom-du-site{
+    max-width: 100px;
+    max-height: 100px;
+    display:block;
+    margin-left: 20px;
 }
 .menu-de-nav{
     margin-right: 120px;
@@ -39,12 +58,7 @@ body{
 a{
     color: rgba(57, 136, 251);
 }
-.nom-du-site{
-    max-width: 100px;
-    max-height: 100px;
-    display:block;
-    margin-left: 20px;
-}
+
 .hebergement{
     padding-top: 0px;
 }
@@ -54,8 +68,6 @@ a{
 .sinscrire{
     padding-top: 30px;
     display: flex;
-    
-
 }
 
 .activites{
@@ -96,9 +108,9 @@ a:link
 .premiere-page{
     width: 100%;
 }
-ul{
-    list-style: none;
-}
+
+/* HEADER */
+
 
 header{
     margin: 10px;
@@ -113,7 +125,7 @@ header{
 
     min-height: 40px;
     min-width: 40px;
-    color: rgba(57, 136, 251);
+    color: black;
     background-color: rgb(224, 222, 222);
     border: 0px solid ;
     border-top-left-radius: 10px;
@@ -143,12 +155,18 @@ button{
     border: none;
     font-weight: bold;
 }
+button:hover{
+    cursor: pointer;
+}
 input{
     border: rgb(219, 219, 219) 1px solid;
     font-weight: bold;
     display: flex;
     text-indent: 5px;
 }
+
+/* FILTRES */
+
 .filtres{
     display: flex;
     flex-direction: row;
@@ -157,7 +175,7 @@ input{
     gap: 20px;
 }
 .economique{
-    width: 150px;
+    width: 170px;
     height: 40px;
     display: flex;
     border: 1px rgb(219, 219, 219) solid;
@@ -165,12 +183,19 @@ input{
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-
+    
+}
+.economique:hover{
+    background-color: rgba(57, 136, 251);
+    color: snow;
+    box-shadow: 2px 2px 2px steelblue;
+    cursor: pointer;
 }
 .economique-text{
     text-align: center;
     font-weight: bold;
     margin-right: 10px;
+    padding-right: 10px ;
 }
 .familial{
     width: 150px;
@@ -182,6 +207,12 @@ input{
     justify-content: center;
     justify-content: space-between;
     
+}
+.familial:hover{
+    background-color: rgba(57, 136, 251);
+    color: snow;
+    box-shadow: 2px 2px 2px steelblue;
+    cursor: pointer;
 }
 .familial-text{
     text-align: center;
@@ -198,6 +229,12 @@ input{
     justify-content: center;
     justify-content: space-between;
 }
+.romantique:hover{
+    background-color: rgba(57, 136, 251);
+    color: snow;
+    box-shadow: 2px 2px 2px steelblue;
+    cursor: pointer;
+}
 .romantique-text{
     text-align: center;
     font-weight: bold;
@@ -212,6 +249,12 @@ input{
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+}
+.animaux:hover{
+    background-color: rgba(57, 136, 251);
+    color: snow;
+    box-shadow: 2px 2px 2px steelblue;
+    cursor: pointer;
 }
 .animaux-text{
     text-align: center;
@@ -234,37 +277,33 @@ input{
     justify-content: center;
     align-items: center;
 }
+/* INFO */
 #icon-info{
     color: rgba(57, 136, 251) ;
     min-width: 20px;
     min-height: 20px;
     max-height: 20px;
     max-width: 20px;
+    font-size: 12px;
     border-radius: 20px;
     border: 1px solid rgb(219, 219, 219);
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
 }
 .info{
     display: flex;
     gap: 20px;
     display: flex;
-    text-align: center;
+    text-align:start;
     align-items: center;
 }
 .text-info{
     display: flex;
 }
-nav{
-    margin: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+
+/* Hébergements à Marseille */
 
 h4{
     margin: 0;
@@ -279,8 +318,10 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    max-height: 300px;
     margin: 10px;
 }
 .star-grey{
@@ -401,6 +442,7 @@ h4{
     margin-bottom: 0px;
     margin-left: 25px;
 }
+/* Les Plus Populaires */
 
 .les-plus-populaires{
     border: 0px; 
@@ -467,6 +509,7 @@ h4{
     border-top-right-radius: 50px;
 }
 /* Activités à Marseille */
+
 h2{
     margin-left: 10px;
 }
