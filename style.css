@@ -19,12 +19,10 @@
 *:before{
     box-sizing: border-box;
 }
-article, footer{
-    display: none !important; 
-}
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    margin-left: 20px;
 }
 img{
     object-fit: cover;
@@ -87,26 +85,10 @@ a:link
     padding-top: 30px;
     display: flex;
 }
-#hebergement{
-    width: 65%;
-    margin: 0;
-}
-.hebergement-marseille{
-    border: 0px; 
-    border-radius: 20px;
-    background-color: rgba(201, 201, 201, 0.863);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 65%;
-    margin: 0;
-}
+
 .etoiles{
     margin-left: 20px;
     margin-top: 5px;
-}
-.premiere-page{
-    width: 100%;
 }
 
 /* HEADER */
@@ -173,6 +155,7 @@ input{
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+    margin-left: 10px;
 }
 .economique{
     width: 170px;
@@ -298,6 +281,7 @@ input{
     display: flex;
     text-align:start;
     align-items: center;
+    margin-left: 10px ;
 }
 .text-info{
     display: flex;
@@ -305,11 +289,46 @@ input{
 
 /* Hébergements à Marseille */
 
+
+#hebergement{
+    width: 65%;
+    margin: 0;
+}
+.section-des-hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+.hebergement-marseille{
+    border: 0px; 
+    border-radius: 20px;
+    background-color: rgba(201, 201, 201, 0.863);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+}
+.hebergement-title{
+    margin-right: 65% ;
+}
 h4{
     margin: 0;
     margin-left: 15px;
     padding: 10px;
 }
+/* ETOILES */
+
+
+.star-grey{
+    color: rgb(196, 196, 196);
+}
+.color-blue{
+    color: rgba(57, 136, 251) ;
+}
+
+/* hébergements */
+
 .auberge-cannebiere{
     padding: 5px;
     border-top-left-radius: 50px;
@@ -318,18 +337,11 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    min-width: 300px;
-    max-height: 300px;
-    min-height: 300px;
-    max-height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
 }
-.star-grey{
-    color: rgb(196, 196, 196);
-}
-.color-blue{
-    color: rgba(57, 136, 251) ;
-}
+
 .auberge-cannebiereJPG{
     width: 100%;
     height: 70%;
@@ -346,8 +358,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
 }
 .hotel-du-portJPG{
@@ -365,8 +377,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
 }
 .hotel-des-mouettesJPG{
@@ -384,8 +396,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
 }
 .hotel-de-la-merJPG{
@@ -403,8 +415,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
 }
 .auberge-le-panierJPG{
@@ -414,9 +426,6 @@ h4{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-.prix-nuit-auberge-le-panier{
-    margin: 15px;
-}
 .hotel-chez-amina{
     padding: 5px;
     border-top-left-radius: 50px;
@@ -425,8 +434,8 @@ h4{
     border-bottom-right-radius: 50px;
     background-color: white;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
 }
 .hotel-chez-aminaJPG{
@@ -442,16 +451,41 @@ h4{
     margin-bottom: 0px;
     margin-left: 25px;
 }
+.afficher-plus{
+    font-weight: bold ;
+    margin-left: 10px;
+}
 /* Les Plus Populaires */
 
-.les-plus-populaires{
+.les-plus-populaires-title{
+    margin-bottom: 0;
+}
+.les-plus-populaires-titre{
+    display: flex;
+    
+}
+#line-up-icon {
+    
+    display: flex;
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 20px;
+    height: 20px;
+    font-size: 22px;
+}
+.hebergement-les-plus-populaires{
     border: 0px; 
     border-radius: 20px;
     background-color: rgba(201, 201, 201, 0.863);
-    width: 35%;
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
 }
-
+.prix{
+    margin-bottom: 60px;
+}
 .hotel-le-soleil-du-matin{
+    display: flex;
     padding: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -460,17 +494,23 @@ h4{
     background-color: white;
     overflow: hidden;
     width: 400px;
-    height: 400px;
+    height: 190px;
     margin: 10px;
 }
 .hotel-le-soleil-du-matinJPG{
-    width: 100%;
-    height: 70%;
+    width: 200px;
+    height: 180px;
     object-fit: cover; 
     border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
+.les-plus-pop-title{
+    margin-bottom: 20px;
+}
+
+
 .au-coeur-de-leau-chambre-dhotes{
+    display: flex;
     padding: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -479,17 +519,18 @@ h4{
     background-color: white;
     overflow: hidden;
     width: 400px;
-    height: 400px;
+    height: 190px;
     margin: 10px;
 }
 .au-coeur-de-leau-chambre-dhotesJPG{
-    width: 100%;
-    height: 70%;
+    width: 200px;
+    height: 180px;
     object-fit: cover; 
     border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 .hotel-tout-bleu-et-blanc{
+    display: flex;
     padding: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -498,15 +539,15 @@ h4{
     background-color: white;
     overflow: hidden;
     width: 400px;
-    height: 400px;
+    height: 190px;
     margin: 10px;
 }
 .hotel-tout-bleu-et-blancJPG{
-    width: 100%;
-    height: 70%;
+    width: 200px;
+    height: 180px;
     object-fit: cover; 
     border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 /* Activités à Marseille */
 
@@ -643,9 +684,9 @@ footer{
 
 /* code Responsive */
 
-@media screen and (max-width: 1400px) {
-    nav {
-        
+@media screen and (max-width: 1410px) {
+    #hebergement{
+        width: 100%;
     }
 }
 @media screen and (max-width: 1220px) {
@@ -713,10 +754,13 @@ li.activites{
        position: absolute;
     }
    /*  HEADER  */
+
     h3{
         margin-right: 75%;
     }
+    /* HEBERGEMENTS */
 
+    
 }
 @media screen and (max-width: 420px) {
     nav {
