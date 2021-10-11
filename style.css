@@ -730,18 +730,156 @@ footer{
 /* code Responsive */
 
 @media screen and (max-width: 1410px) {
+
+    /* Hebergements */
+    /* LPP*/
     #hebergement{
         width: 100%;
+        margin-right: 20px;
     }
-}
-@media screen and (max-width: 1220px) {
-    nav {
+    .section-des-hebergement{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergement-les-plus-populaires{
+        width: 100%;
+        min-width: none;
+        max-width: none;
+    }
+    .les-plus-populaires{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .les-plus-populaires-titre{
+        width: 100%;
+        height: 25%;
+    }
+    .responsive-les-plus-pop{
+        display: flex;
+        justify-content: center;
         
     }
+    .hotel-le-soleil-du-matin .au-coeur-de-leau-chambre-dhotes .hotel-tout-bleu-et-blanc{
+        margin: 5px;
+    }
+    /* HàM */
+
+    .auberge-le-panier{
+        margin-left: 310px;
+        
+    }
+    .hotel-chez-amina{
+        margin-right: 350px;
+    }
+    .afficher-plus{
+        margin-left: 50px;
+    }
+
 }
-@media screen and (max-width: 1024px) {
-    nav {
-       
+@media screen and (max-width: 1262px) {
+    /* Hebergement */ 
+    
+    .hotel-tout-bleu-et-blanc{
+        width: 50%;
+        display: flex;
+        
+    }
+    .au-coeur-de-leau-chambre-dhotes{
+        width: 50%;
+        display: flex;
+    }
+    .hotel-le-soleil-du-matin{
+        width: 50%;
+        display: flex;
+    }
+    .responsive-les-plus-pop{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .les-plus-populaires{
+        width: 100%;
+    }
+    .responsive-les-plus-pop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .les-plus-populaires-titre{
+        margin-bottom: 20px;
+    }
+    /* HàM */
+    .auberge-le-panier{
+        margin-left: 10px ;
+    }
+    .hotel-chez-amina{
+        margin-right: 30px ;
+    }
+    .hotel-des-mouettes{
+        margin-right: 30px;
+    }
+    .auberge-cannebiere{
+        margin-left: 150px;
+    }
+    .hotel-de-la-mer{
+        margin-left: 150px;
+    }
+    .afficher-plus{
+        margin-left: 80px;
+    }
+
+}
+@media  screen and (max-width : 1100px) {
+     
+    /* HàM */
+
+    .auberge-cannebiere{
+        margin-left: 100px;
+    }
+    .hotel-de-la-mer{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .hotel-le-soleil-du-matin{
+        display: flex;
+        width: 80%;
+    }
+    .hotel-tout-bleu-et-blanc{
+        width: 80%;
+        display: flex;
+    }
+    .au-coeur-de-leau-chambre-dhotes{
+        width: 80%;
+        display: flex;
+    }
+     /* HàM */
+    
+    .auberge-cannebiere{
+        width: 40%;
+        margin-left: 60px;
+    }
+    .hotel-du-port{
+        width: 40%;
+    }
+    .hotel-des-mouettes{
+        width: 40%;
+        margin: 0;
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+    .hotel-de-la-mer{
+        width: 40%;
+        margin: 0;
+    }
+    .auberge-le-panier{
+        width: 40%;
+        margin-left: 60px;
+    }
+    .hotel-chez-amina{
+        width: 40%;
     }
 }
 
@@ -805,18 +943,46 @@ li.activites{
     }
     /* HEBERGEMENTS */
 
+    /* HàM */
+
+    .auberge-cannebiere{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hotel-du-port{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hotel-des-mouettes{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hotel-de-la-mer{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .auberge-le-panier{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hotel-chez-amina{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 }
 @media screen and (max-width: 420px) {
-    nav {
-        
-    }
+    
  }
 
 @media screen and (max-width: 375px){
-   nav {
-       
-   } 
+   
    .sinscrire{
        position: absolute;
    }
