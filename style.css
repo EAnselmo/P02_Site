@@ -775,7 +775,68 @@ footer{
     .afficher-plus{
         margin-left: 50px;
     }
+    /* ACTIVITÉS A MARSEILLE */
 
+    .activites-second-container{
+        display: flex;
+        flex-direction: row;
+        order: -1;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .activites-premier-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .fort-de-pomegues{
+        width: 40%;
+        height: 250px;
+    }
+    .fort-de-pomeguesJPG{
+        width: 100%;
+        height: 200px;
+    }
+    .iles-du-frioul{
+        width: 40%;
+        height: 250px;
+    }
+    .iles-du-frioulJPG{
+        height: 200px;
+    }
+    .vieux-port{
+        width: 40%;
+        height: 250px;
+    }
+    .vieux-portJPG{
+        width: 100%;
+        height: 200px;
+    }
+    .parc-national-des-calanques{
+        width: 40%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .parc-national-des-calanquesJPG{
+        width: 100%;
+        height: 200px;
+    }
+    .notre-dame-de-la-garde{
+        width: 40%;
+    }
+    .parc-longchamp{
+        width: 40%;
+    }
+    .activites-a-marseille{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
 }
 @media screen and (max-width: 1262px) {
     /* Hebergement */ 
@@ -975,7 +1036,72 @@ li.activites{
         margin-left: auto;
         margin-right: auto;
     }
-    
+    /* ACTIVITÉS à MARSEILLE */
+
+    .activites-premier-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .activites-second-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .fort-de-pomegues{
+        width: 90%;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .fort-de-pomeguesJPG{
+        width: 100%;
+        height: 200px;
+    }
+    .iles-du-frioul{
+        width: 90%;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .iles-du-frioulJPG{
+        height: 200px;
+    }
+    .vieux-port{
+        width: 90%;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .vieux-portJPG{
+        width: 100%;
+        height: 200px;
+    }
+    .parc-national-des-calanques{
+        width: 90%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .parc-national-des-calanquesJPG{
+        width: 100%;
+        height: 200px;
+    }
+    .notre-dame-de-la-garde{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .parc-longchamp{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .activites-a-marseille{
+        margin-left: 0;
+    }
+    /* Footer  */
 }
 @media screen and (max-width: 420px) {
     
