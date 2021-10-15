@@ -613,220 +613,118 @@ footer > .container {
 
 /* code Responsive */
 
-media screen and (max-width: 1410px) {
-    /* Hebergements */
-    /* LPP*/
-    #hebergement {
-        width: 100%;
-        margin-right: 20px;
-    }
+@media screen and (max-width: 1160px) {
+    /* HEBREGEMENT */
+
     .section-des-hebergement {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    #hebergement {
+        width: 100%;
+        height: 750px;
+    }
     .hebergement-les-plus-populaires {
         width: 100%;
-        min-width: none;
-        max-width: none;
+        max-width: 100%;
     }
+
     .les-plus-populaires {
-        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .afficher-plus {
+        display: flex;
+        align-items: flex-end;
     }
     .les-plus-populaires-titre {
-        width: 100%;
-        height: 25%;
+        display: flex;
+        width: 90%;
+        gap: 70%;
+        align-content: space-between;
     }
-    .responsive-les-plus-pop {
+    #line-up-icon {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Filtres */
+
+    .filtres > h3 {
+        width: 85%;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+    /* Activité à Marseille */
+
+    .activites-a-marseille {
+        height: 100%;
+        gap: 20px;
         display: flex;
         justify-content: center;
     }
-    .hotel-le-soleil-du-matin
-        .au-coeur-de-leau-chambre-dhotes
-        .hotel-tout-bleu-et-blanc {
-        margin: 5px;
-    }
-    /* HàM */
 
-    .auberge-le-panier {
-        margin-left: 310px;
-    }
-    .hotel-chez-amina {
-        margin-right: 350px;
-    }
-    .afficher-plus {
-        margin-left: 50px;
-    }
-    /* ACTIVITÉS A MARSEILLE */
-
-    .activites-second-container {
-        display: flex;
-        flex-direction: row;
-        order: -1;
-        width: 100%;
-        justify-content: space-around;
-    }
     .activites-premier-container {
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 280px;
     }
-    .fort-de-pomegues {
-        width: 40%;
-        height: 250px;
-    }
-    .fort-de-pomeguesJPG {
-        width: 100%;
-        height: 200px;
-    }
-    .iles-du-frioul {
-        width: 40%;
-        height: 250px;
-    }
-    .iles-du-frioulJPG {
-        height: 200px;
-    }
-    .vieux-port {
-        width: 40%;
-        height: 250px;
-    }
-    .vieux-portJPG {
-        width: 100%;
-        height: 200px;
-    }
-    .parc-national-des-calanques {
-        width: 40%;
-        height: 250px;
-        margin-bottom: 20px;
-    }
-    .parc-national-des-calanquesJPG {
-        width: 100%;
-        height: 200px;
-    }
-    .notre-dame-de-la-garde {
-        width: 40%;
-    }
-    .parc-longchamp {
-        width: 40%;
-    }
-    .activites-a-marseille {
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-witdh: 1160px) {
-}
-
-media screen and (max-width: 1262px) {
-    /* Hebergement */
-
-    .hotel-tout-bleu-et-blanc {
-        width: 50%;
-        display: flex;
-    }
-    .au-coeur-de-leau-chambre-dhotes {
-        width: 50%;
-        display: flex;
-    }
-    .hotel-le-soleil-du-matin {
-        width: 50%;
-        display: flex;
-    }
-    .responsive-les-plus-pop {
+    .activites-second-container {
         display: flex;
         flex-direction: column;
+        width: 90%;
+        height: 10%;
+        gap: 20px;
+    }
+    .vieux-port,
+    .fort-de-pomegues,
+    .iles-du-frioul,
+    .parc-national-des-calanques,
+    .notre-dame-de-la-garde,
+    .parc-longchamp {
+        height: 100%;
+    }
+    .vieux-portJPG,
+    .fort-de-pomeguesJPG,
+    .iles-du-frioulJPG,
+    .parc-national-des-calanquesJPG,
+    .notre-dame-de-la-gardeJPG,
+    .parc-longchampJPG {
+        height: 250px;
         width: 100%;
     }
-    .les-plus-populaires {
-        width: 100%;
+
+    /* footer*/
+
+    footer {
+        margin-top: 40px;
+        height: 400px;
     }
-    .responsive-les-plus-pop {
+
+    footer > .container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        align-content: center;
+        height: 400px;
     }
+    .menu-de-fin {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 980px) {
     .les-plus-populaires-titre {
-        margin-bottom: 20px;
-    }
-    /* HàM */
-    .auberge-le-panier {
-        margin-left: 10px;
-    }
-    .hotel-chez-amina {
-        margin-right: 30px;
-    }
-    .hotel-des-mouettes {
-        margin-right: 30px;
-    }
-    .auberge-cannebiere {
-        margin-left: 150px;
-    }
-    .hotel-de-la-mer {
-        margin-left: 150px;
-    }
-    .afficher-plus {
-        margin-left: 80px;
+        gap: 50%;
     }
 }
-media screen and (max-width : 1100px) {
-    /* HàM */
-
-    .auberge-cannebiere {
-        margin-left: 100px;
-    }
-    .hotel-de-la-mer {
-        margin-left: 100px;
-    }
-}
-
-media screen and (max-width: 1040px) {
-    .hotel-le-soleil-du-matin {
-        display: flex;
-        width: 80%;
-    }
-    .hotel-tout-bleu-et-blanc {
-        width: 80%;
-        display: flex;
-    }
-    .au-coeur-de-leau-chambre-dhotes {
-        width: 80%;
-        display: flex;
-    }
-    /* HàM */
-
-    .auberge-cannebiere {
-        width: 40%;
-        margin-left: 60px;
-    }
-    .hotel-du-port {
-        width: 40%;
-    }
-    .hotel-des-mouettes {
-        width: 40%;
-        margin: 0;
-        margin-left: 60px;
-        margin-right: 20px;
-    }
-    .hotel-de-la-mer {
-        width: 40%;
-        margin: 0;
-    }
-    .auberge-le-panier {
-        width: 40%;
-        margin-left: 60px;
-    }
-    .hotel-chez-amina {
-        width: 40%;
-    }
-}
-
-media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* NAV */
     body {
         width: 100vw;
@@ -876,120 +774,37 @@ media screen and (max-width: 768px) {
     }
     .nom-du-site {
         display: flex;
-        left: 0px;
+        left: 20px;
         top: 20px;
         position: absolute;
     }
-    /*  HEADER  */
-
-    h3 {
-        margin-right: 75%;
-    }
     /* HEBERGEMENTS */
 
-    /* HàM */
+    .section-des-hebergement {
+        height: 100%;
+    }
 
-    .auberge-cannebiere {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    #hebergement {
+        height: 2000px;
     }
-    .hotel-du-port {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    .hebergement-marseille {
+        height: 1000px;
     }
-    .hotel-des-mouettes {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .hotel-de-la-mer {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .auberge-le-panier {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    .auberge-cannebiere,
+    .hotel-du-port,
+    .hotel-des-mouettes,
+    .hotel-de-la-mer,
+    .auberge-le-panier,
     .hotel-chez-amina {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* ACTIVITÉS à MARSEILLE */
-
-    .activites-premier-container {
-        display: flex;
-        align-items: center;
         width: 100%;
+        height: 15%;
     }
-
-    .activites-second-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .les-plus-populaires-titre {
+        gap: 35%;
     }
-    .fort-de-pomegues {
-        width: 90%;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .fort-de-pomeguesJPG {
-        width: 100%;
-        height: 200px;
-    }
-    .iles-du-frioul {
-        width: 90%;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .iles-du-frioulJPG {
-        height: 200px;
-    }
-    .vieux-port {
-        width: 90%;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .vieux-portJPG {
-        width: 100%;
-        height: 200px;
-    }
-    .parc-national-des-calanques {
-        width: 90%;
-        height: 250px;
-        margin-bottom: 20px;
-    }
-    .parc-national-des-calanquesJPG {
-        width: 100%;
-        height: 200px;
-    }
-    .notre-dame-de-la-garde {
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .parc-longchamp {
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .activites-a-marseille {
-        margin-left: 0;
-    }
-    /* Footer  */
 }
-media screen and (max-width: 420px) {
-}
-
-media screen and (max-width: 375px) {
-    .sinscrire {
-        position: absolute;
+@media screen and (max-width: 520px) {
+    .les-plus-populaires-titre {
+        gap: 0%;
     }
 }
