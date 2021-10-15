@@ -430,6 +430,7 @@ h4 {
 .au-coeur-de-leau-chambre-dhotesJPG,
 .hotel-tout-bleu-et-blancJPG {
     width: 50%;
+    min-width: 130px;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -441,7 +442,7 @@ h4 {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30%;
 }
 .prix {
     margin-left: 0;
@@ -649,6 +650,11 @@ footer > .container {
     #line-up-icon {
         margin-top: 0;
     }
+    .hotel-le-soleil-du-matin,
+    .au-coeur-de-leau-chambre-dhotes,
+    .hotel-tout-bleu-et-blanc {
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -722,6 +728,11 @@ footer > .container {
 @media screen and (max-width: 980px) {
     .les-plus-populaires-titre {
         gap: 50%;
+    }
+    .hotel-le-soleil-du-matin,
+    .au-coeur-de-leau-chambre-dhotes,
+    .hotel-tout-bleu-et-blanc {
+        height: 150px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -802,6 +813,13 @@ footer > .container {
     .les-plus-populaires-titre {
         gap: 35%;
     }
+
+    .hotel-tout-bleu-et-blanc-text,
+    .hotel-le-soleil-du-matin-text,
+    .au-coeur-de-leau-chambre-dhotes-text {
+        gap: 10%;
+    }
+
     /* Activités à Marseille */
 
     .activites-a-marseille {
