@@ -678,7 +678,7 @@ footer > .container {
     }
     .activites-second-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 90%;
         height: 10%;
         gap: 20px;
@@ -697,7 +697,7 @@ footer > .container {
     .parc-national-des-calanquesJPG,
     .notre-dame-de-la-gardeJPG,
     .parc-longchampJPG {
-        height: 250px;
+        height: 240px;
         width: 100%;
     }
 
@@ -801,6 +801,45 @@ footer > .container {
     }
     .les-plus-populaires-titre {
         gap: 35%;
+    }
+    /* Activités à Marseille */
+
+    .activites-a-marseille {
+        height: 100%;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .activites-premier-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 280px;
+    }
+    .activites-second-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 10%;
+        gap: 20px;
+    }
+    .vieux-port,
+    .fort-de-pomegues,
+    .iles-du-frioul,
+    .parc-national-des-calanques,
+    .notre-dame-de-la-garde,
+    .parc-longchamp {
+        height: 100%;
+    }
+    .vieux-portJPG,
+    .fort-de-pomeguesJPG,
+    .iles-du-frioulJPG,
+    .parc-national-des-calanquesJPG,
+    .notre-dame-de-la-gardeJPG,
+    .parc-longchampJPG {
+        height: 250px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 520px) {
