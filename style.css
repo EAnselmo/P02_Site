@@ -62,6 +62,7 @@ a {
 
 .hebergement {
     padding-top: 0px;
+    border-top: solid 3px white;
 }
 .hebergement:hover {
     border-top: solid 3px rgba(57, 136, 251);
@@ -74,6 +75,7 @@ a {
 .activites {
     padding-top: 30px;
     color: rgba(57, 136, 251);
+    border-top: solid 3px white;
 }
 .activites:hover {
     border-top: solid 3px rgba(57, 136, 251);
