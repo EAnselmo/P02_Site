@@ -424,7 +424,7 @@ h4 {
     background-color: white;
     overflow: hidden;
     width: 90%;
-    height: 170px;
+    height: 140px;
     margin: 0px;
 }
 
@@ -441,7 +441,7 @@ h4 {
 .hotel-le-soleil-du-matin-text,
 .au-coeur-de-leau-chambre-dhotes-text,
 .hotel-tout-bleu-et-blanc-text {
-    padding: 10px;
+    padding: 0px 10px 40px 10px;
     display: flex;
     flex-direction: column;
     gap: 30%;
@@ -454,15 +454,16 @@ h4 {
 }
 
 /* Activités à Marseille */
-article {
+section {
     width: 100%;
 }
+
 .activites-a-marseille {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    height: 670px;
+    height: 100%;
     gap: 4%;
 }
 .activites-marseille-box:hover {
@@ -486,15 +487,14 @@ article {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 600px;
+    height: 100%;
     border-radius: 25px;
     border: white 1px solid;
     box-shadow: lightgrey 5px 10px 10px;
 }
 .vieux-portJPG {
-    display: flex;
     width: 100%;
-    height: 550px;
+    height: 92%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -505,11 +505,11 @@ article {
     border: white 1px solid;
     box-shadow: lightgrey 5px 10px 10px;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 .fort-de-pomeguesJPG {
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: 90%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -520,11 +520,11 @@ article {
     border: white 1px solid;
     box-shadow: lightgrey 5px 10px 10px;
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
 .iles-du-frioulJPG {
     width: 100%;
-    height: 150px;
+    height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -535,11 +535,11 @@ article {
     border: white 1px solid;
     box-shadow: lightgrey 5px 10px 10px;
     width: 100%;
-    height: 600px;
+    height: 100%;
 }
 .parc-national-des-calanquesJPG {
     width: 100%;
-    height: 550px;
+    height: 92%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -550,12 +550,12 @@ article {
     border: white 1px solid;
     box-shadow: lightgrey 5px 10px 10px;
     width: 100%;
-    height: 250px;
+    height: 100%;
 }
 .notre-dame-de-la-gardeJPG {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 85%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -566,12 +566,12 @@ article {
     border: white 1px solid;
     box-shadow: lightgrey 5px 10px 10px;
     width: 100%;
-    height: 250px;
+    height: 100%;
 }
 .parc-longchampJPG {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 85%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -581,6 +581,7 @@ article {
 footer {
     margin: 0px;
     background-color: rgba(197, 194, 194, 0.726);
+    margin-top: 50px;
 }
 footer > .container {
     display: flex;
@@ -742,6 +743,12 @@ footer > .container {
     body {
         width: 100vw;
     }
+    .container {
+        width: 90%;
+    }
+    nav > .container {
+        width: 100%;
+    }
     .menu-de-nav {
         width: 100%;
         padding: 0;
@@ -799,6 +806,7 @@ footer > .container {
 
     #hebergement {
         height: 2000px;
+        background-color: white;
     }
     .hebergement-marseille {
         height: 1000px;
@@ -822,7 +830,24 @@ footer > .container {
         gap: 10%;
     }
 
+    /* LPP */
+
+    div > .section-des-hebergement > .container {
+        width: 100%;
+    }
+    .hebergement-les-plus-populaires,
+    .section-des-hebergement {
+        border-radius: 0px;
+        width: 100%;
+    }
+    .hebergement-les-plus-populaires > .container {
+        width: 100%;
+    }
     /* Activités à Marseille */
+
+    .activites-marseille-section > h2 {
+        margin-left: 40px;
+    }
 
     .activites-a-marseille {
         height: 100%;
@@ -835,7 +860,7 @@ footer > .container {
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: 280px;
+        height: 100%;
     }
     .activites-second-container {
         display: flex;
