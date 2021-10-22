@@ -482,15 +482,16 @@ section {
     flex-direction: column;
     gap: 40px;
 }
+.activites-marseille-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: lightgrey 5px 10px 10px;
+}
 
 .vieux-port {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     height: 450px;
-    border-radius: 25px;
-    border: white 1px solid;
-    box-shadow: lightgrey 5px 10px 10px;
 }
 .vieux-portJPG {
     width: 100%;
@@ -499,27 +500,15 @@ section {
     border-top-right-radius: 25px;
 }
 .fort-de-pomegues {
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    border: white 1px solid;
-    box-shadow: lightgrey 5px 10px 10px;
-    width: 100%;
     height: 235px;
 }
 .fort-de-pomeguesJPG {
     width: 100%;
-    height: 80%;
+    height: 83%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 .iles-du-frioul {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 25px;
-    border: white 1px solid;
-    box-shadow: lightgrey 5px 10px 10px;
-    width: 100%;
     height: 175px;
 }
 .iles-du-frioulJPG {
@@ -529,12 +518,6 @@ section {
     border-top-right-radius: 25px;
 }
 .parc-national-des-calanques {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 25px;
-    border: white 1px solid;
-    box-shadow: lightgrey 5px 10px 10px;
-    width: 100%;
     height: 450px;
 }
 .parc-national-des-calanquesJPG {
@@ -544,34 +527,22 @@ section {
     border-top-right-radius: 25px;
 }
 .notre-dame-de-la-garde {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 25px;
-    border: white 1px solid;
-    box-shadow: lightgrey 5px 10px 10px;
-    width: 100%;
     height: 200px;
 }
 .notre-dame-de-la-gardeJPG {
     display: flex;
     width: 100%;
-    height: 85%;
+    height: 82%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 .parc-longchamp {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 25px;
-    border: white 1px solid;
-    box-shadow: lightgrey 5px 10px 10px;
-    width: 100%;
     height: 210px;
 }
 .parc-longchampJPG {
     display: flex;
     width: 100%;
-    height: 85%;
+    height: 82%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -883,7 +854,7 @@ footer > .container {
     .parc-national-des-calanquesJPG,
     .notre-dame-de-la-gardeJPG,
     .parc-longchampJPG {
-        height: 250px;
+        height: 200px;
         width: 100%;
     }
 }
