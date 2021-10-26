@@ -718,7 +718,7 @@ footer > .container {
         width: 90%;
     }
     nav .container {
-        width: 100%;
+        min-width: 100%;
     }
     .menu-de-nav {
         width: 100%;
